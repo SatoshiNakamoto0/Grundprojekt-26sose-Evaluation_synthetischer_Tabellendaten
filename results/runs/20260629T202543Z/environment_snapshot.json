@@ -1,0 +1,36 @@
+{
+  "created_at": "2026-06-29T20:25:43.702668Z",
+  "cwd_project_relative": ".",
+  "machine": "arm64",
+  "notebook_version": "final-paper-run-code-llm-v2-ablation-patch",
+  "ollama_endpoint": "http://localhost:11434",
+  "ollama_model": "llama3.2:3b",
+  "ollama_model_metadata": {
+    "details": {
+      "families": [
+        "llama"
+      ],
+      "family": "llama",
+      "format": "gguf",
+      "parameter_size": "3.2B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+    "http_status": 200,
+    "modified_at": "2026-06-02T18:02:22.87952992+02:00",
+    "name": "llama3.2:3b",
+    "size": 2019393189,
+    "status": "available"
+  },
+  "ollama_version": "ollama version is 0.23.2",
+  "path_note": "Absolute local filesystem paths are redacted from this portable environment snapshot.",
+  "pip_freeze": "results/runs/20260629T202543Z/pip_freeze.txt",
+  "platform": "macOS-26.5.1-arm64-arm-64bit",
+  "processor": "arm",
+  "project_root_absolute_path_redacted": true,
+  "project_root_name": "Grundprojekt_Code",
+  "python_executable_absolute_path_redacted": true,
+  "python_executable_basename": "python",
+  "python_version": "3.11.15 (main, Mar  3 2026, 00:52:57) [Clang 21.0.0 (clang-2100.0.123.102)]"
+}

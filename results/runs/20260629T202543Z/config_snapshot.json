@@ -1,0 +1,273 @@
+{
+  "audit_note": "Snapshot only; it does not change experiment parameters, seeds, methods, datasets, or metrics.",
+  "config": {
+    "audit_artifacts_enabled": true,
+    "auto_create_missing_splits": true,
+    "code_llm_num_predict": 1800,
+    "code_llm_scaffold_version": "Code-LLM-v2",
+    "code_llm_temperature": 0.1,
+    "ctgan_epochs": 50,
+    "ctgan_max_raw_multiplier": 20,
+    "ctgan_raw_multiplier": 5,
+    "ctgan_strong_epochs": 300,
+    "datasets": [
+      "adult",
+      "pima"
+    ],
+    "direct_icl_batch_size": 25,
+    "direct_icl_num_predict": 2200,
+    "direct_icl_temperature": 0.5,
+    "max_code_llm_attempts": 5,
+    "max_direct_icl_batches": 40,
+    "max_refill_attempts": 20,
+    "method_success_min_llm_fraction": 0.5,
+    "methods": [
+      "ctgan",
+      "ctgan_strong",
+      "direct_icl",
+      "code_llm",
+      "fallback_only"
+    ],
+    "notebook_version": "final-paper-run-code-llm-v2-ablation-patch",
+    "ollama_endpoint": "http://localhost:11434",
+    "ollama_model": "llama3.2:3b",
+    "ollama_timeout_seconds": null,
+    "ollama_top_p": 0.9,
+    "save_code_llm_traces": true,
+    "save_final_synthetic_csvs": true,
+    "save_incremental_results": true,
+    "save_per_run_results": true,
+    "save_raw_llm_outputs": true,
+    "save_row_provenance": true,
+    "seeds": [
+      42,
+      123,
+      2025
+    ],
+    "smoke_synthetic_rows": 50,
+    "synthetic_rows": 500,
+    "train_sizes": [
+      100,
+      500
+    ]
+  },
+  "created_at": "2026-06-29T20:25:43.754677Z",
+  "education_to_num": {
+    "10th": 6,
+    "11th": 7,
+    "12th": 8,
+    "1st-4th": 2,
+    "5th-6th": 3,
+    "7th-8th": 4,
+    "9th": 5,
+    "Assoc-acdm": 12,
+    "Assoc-voc": 11,
+    "Bachelors": 13,
+    "Doctorate": 16,
+    "HS-grad": 9,
+    "Masters": 14,
+    "Preschool": 1,
+    "Prof-school": 15,
+    "Some-college": 10
+  },
+  "schema": {
+    "adult": {
+      "allowed_values": {
+        "education": [
+          "10th",
+          "11th",
+          "12th",
+          "1st-4th",
+          "5th-6th",
+          "7th-8th",
+          "9th",
+          "Assoc-acdm",
+          "Assoc-voc",
+          "Bachelors",
+          "Doctorate",
+          "HS-grad",
+          "Masters",
+          "Preschool",
+          "Prof-school",
+          "Some-college"
+        ],
+        "income": [
+          "<=50K",
+          ">50K"
+        ],
+        "marital-status": [
+          "Divorced",
+          "Married-AF-spouse",
+          "Married-civ-spouse",
+          "Married-spouse-absent",
+          "Never-married",
+          "Separated",
+          "Widowed"
+        ],
+        "occupation": [
+          "Adm-clerical",
+          "Armed-Forces",
+          "Craft-repair",
+          "Exec-managerial",
+          "Farming-fishing",
+          "Handlers-cleaners",
+          "Machine-op-inspct",
+          "Other-service",
+          "Priv-house-serv",
+          "Prof-specialty",
+          "Protective-serv",
+          "Sales",
+          "Tech-support",
+          "Transport-moving"
+        ],
+        "race": [
+          "Amer-Indian-Eskimo",
+          "Asian-Pac-Islander",
+          "Black",
+          "Other",
+          "White"
+        ],
+        "sex": [
+          "Female",
+          "Male"
+        ],
+        "workclass": [
+          "Federal-gov",
+          "Local-gov",
+          "Private",
+          "Self-emp-inc",
+          "Self-emp-not-inc",
+          "State-gov",
+          "Without-pay"
+        ]
+      },
+      "categorical": [
+        "workclass",
+        "education",
+        "marital-status",
+        "occupation",
+        "race",
+        "sex",
+        "income"
+      ],
+      "columns": [
+        "age",
+        "workclass",
+        "education",
+        "education-num",
+        "marital-status",
+        "occupation",
+        "race",
+        "sex",
+        "hours-per-week",
+        "income"
+      ],
+      "integer": [
+        "age",
+        "education-num",
+        "hours-per-week"
+      ],
+      "numeric": [
+        "age",
+        "education-num",
+        "hours-per-week"
+      ],
+      "positive_label": ">50K",
+      "ranges": {
+        "age": [
+          17,
+          90
+        ],
+        "education-num": [
+          1,
+          16
+        ],
+        "hours-per-week": [
+          1,
+          99
+        ]
+      },
+      "target": "income"
+    },
+    "pima": {
+      "allowed_values": {
+        "Outcome": [
+          0,
+          1
+        ]
+      },
+      "categorical": [],
+      "columns": [
+        "Pregnancies",
+        "Glucose",
+        "BloodPressure",
+        "SkinThickness",
+        "Insulin",
+        "BMI",
+        "DiabetesPedigreeFunction",
+        "Age",
+        "Outcome"
+      ],
+      "integer": [
+        "Pregnancies",
+        "Glucose",
+        "BloodPressure",
+        "SkinThickness",
+        "Insulin",
+        "Age",
+        "Outcome"
+      ],
+      "numeric": [
+        "Pregnancies",
+        "Glucose",
+        "BloodPressure",
+        "SkinThickness",
+        "Insulin",
+        "BMI",
+        "DiabetesPedigreeFunction",
+        "Age",
+        "Outcome"
+      ],
+      "positive_label": 1,
+      "ranges": {
+        "Age": [
+          21,
+          81
+        ],
+        "BMI": [
+          0.0,
+          67.1
+        ],
+        "BloodPressure": [
+          0,
+          122
+        ],
+        "DiabetesPedigreeFunction": [
+          0.078,
+          2.42
+        ],
+        "Glucose": [
+          0,
+          199
+        ],
+        "Insulin": [
+          0,
+          846
+        ],
+        "Outcome": [
+          0,
+          1
+        ],
+        "Pregnancies": [
+          0,
+          17
+        ],
+        "SkinThickness": [
+          0,
+          99
+        ]
+      },
+      "target": "Outcome"
+    }
+  }
+}

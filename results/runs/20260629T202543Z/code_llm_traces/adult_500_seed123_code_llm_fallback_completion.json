@@ -1,0 +1,12 @@
+{
+  "dataset": "adult",
+  "failure_stage": "fallback_completion",
+  "fallback_rows": 1,
+  "final_rows": 500,
+  "method": "code_llm",
+  "previous_failure_reason": "",
+  "previous_failure_stage": "",
+  "seed": 123,
+  "timestamp": "2026-06-29T21:19:00.372483Z",
+  "train_size": 500
+}
