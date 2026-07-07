@@ -1,0 +1,65 @@
+{
+  "batch_index": 6,
+  "dataset": "pima",
+  "http_status": 200,
+  "invalid_lines_limited": [],
+  "invalid_reason_counts": {
+    "parse_error": 0,
+    "wrong_column_count": 0
+  },
+  "method": "direct_icl",
+  "model": "llama3.2:3b",
+  "num_predict": 2200,
+  "ollama_call_metadata": {
+    "elapsed_seconds": 20.38457703590393,
+    "endpoint": "http://localhost:11434",
+    "error": "",
+    "http_status": 200,
+    "model": "llama3.2:3b",
+    "num_predict": 2200,
+    "ok": true,
+    "response_bytes": 4314,
+    "temperature": 0.5,
+    "timeout_seconds": null,
+    "timestamp": "2026-06-29T22:08:38.069955Z",
+    "top_p": 0.9
+  },
+  "parse_diagnostics": {
+    "batch_error": "",
+    "invalid_format_rows": 0,
+    "invalid_lines": [],
+    "invalid_reason_counts": {
+      "parse_error": 0,
+      "wrong_column_count": 0
+    },
+    "ollama_call_metadata": {
+      "elapsed_seconds": 20.38457703590393,
+      "endpoint": "http://localhost:11434",
+      "error": "",
+      "http_status": 200,
+      "model": "llama3.2:3b",
+      "num_predict": 2200,
+      "ok": true,
+      "response_bytes": 4314,
+      "temperature": 0.5,
+      "timeout_seconds": null,
+      "timestamp": "2026-06-29T22:08:38.069955Z",
+      "top_p": 0.9
+    },
+    "parse_error_count": 0,
+    "parsed_rows": 21,
+    "raw_rows": 21,
+    "valid_rows": 21
+  },
+  "parsed_rows": 21,
+  "prompt": "Generate 25 synthetic CSV rows for the pima dataset.\nReturn only CSV text with one header line. No markdown. No explanation.\nColumns in this exact order: Pregnancies,Glucose,BloodPressure,SkinThickness,Insulin,BMI,DiabetesPedigreeFunction,Age,Outcome\nApproximate target distribution: 0: 0.652; 1: 0.348\nDo not copy example rows exactly. Vary numeric values and category combinations.\nExamples:\nPregnancies,Glucose,BloodPressure,SkinThickness,Insulin,BMI,DiabetesPedigreeFunction,Age,Outcome\n6,123,72,45,230,33.6,0.733,34,0\n4,145,82,18,0,32.5,0.235,70,1\n8,74,70,40,49,35.3,0.705,39,0\n2,106,56,27,165,29.0,0.426,22,0\n10,90,85,32,0,34.9,0.825,56,1\n8,176,90,34,300,33.7,0.467,58,1\n0,101,65,28,0,24.6,0.237,22,0\n6,134,80,37,370,46.2,0.238,46,1",
+  "raw_response": "Pregnancies,Glucose,BloodPressure,SkinThickness,Insulin,BMI,DiabetesPedigreeFunction,Age,Outcome\n5,129,71,38,225,34.4,0.708,31,0\n7,98,75,41,50,36.2,0.255,66,1\n9,139,81,29,250,30.6,0.513,40,0\n3,152,67,22,120,32.8,0.394,59,0\n11,107,90,39,400,35.9,0.654,24,1\n4,142,78,20,180,31.7,0.288,49,1\n10,85,72,33,45,32.8,0.629,55,0\n2,155,58,26,280,30.5,0.442,48,0\n12,123,76,42,350,38.4,0.736,39,1\n6,108,79,35,200,33.9,0.258,50,0\n8,146,84,28,220,31.5,0.475,60,1\n7,91,73,40,55,36.4,0.242,65,0\n3,128,68,23,150,32.2,0.404,58,1\n11,129,83,30,270,34.5,0.638,51,1\n9,138,80,31,230,33.4,0.529,42,0\n5,133,70,39,210,32.3,0.466,35,0\n2,142,61,25,140,30.8,0.451,52,1\n6,139,78,36,240,34.9,0.269,46,0\n10,92,75,29,50,32.5,0.625,54,0\n4,151,82,24,190,31.2,0.292,47,1\n8,124,76,38,260,35.2,0.702,40,0",
+  "raw_rows": 21,
+  "request_elapsed_seconds": 20.38457703590393,
+  "seed": 123,
+  "temperature": 0.5,
+  "timestamp": "2026-06-29T22:08:38.085484Z",
+  "top_p": 0.9,
+  "train_size": 500,
+  "valid_rows": 21
+}
