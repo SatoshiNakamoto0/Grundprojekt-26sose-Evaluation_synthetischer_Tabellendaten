@@ -1,0 +1,16 @@
+{
+  "dataset": "pima",
+  "fallback_fraction": 0.0,
+  "fallback_or_refill_rows": 0,
+  "fallback_source": "direct_icl_repair_fallback",
+  "final_rows": 500,
+  "method": "direct_icl",
+  "method_success": true,
+  "method_success_threshold": 0.5,
+  "primary_generator_rows": 500,
+  "primary_source": "direct_icl_primary_valid",
+  "provenance_note": "fallback_fraction is output provenance, not a quality metric.",
+  "row_level_provenance_csv": "results/runs/20260629T202543Z/row_provenance/pima_500_seed123_direct_icl_row_provenance.csv",
+  "seed": 123,
+  "train_size": 500
+}
