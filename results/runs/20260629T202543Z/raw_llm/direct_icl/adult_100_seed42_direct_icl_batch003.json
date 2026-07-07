@@ -1,0 +1,65 @@
+{
+  "batch_index": 3,
+  "dataset": "adult",
+  "http_status": 200,
+  "invalid_lines_limited": [],
+  "invalid_reason_counts": {
+    "parse_error": 0,
+    "wrong_column_count": 0
+  },
+  "method": "direct_icl",
+  "model": "llama3.2:3b",
+  "num_predict": 2200,
+  "ollama_call_metadata": {
+    "elapsed_seconds": 17.718796014785767,
+    "endpoint": "http://localhost:11434",
+    "error": "",
+    "http_status": 200,
+    "model": "llama3.2:3b",
+    "num_predict": 2200,
+    "ok": true,
+    "response_bytes": 7438,
+    "temperature": 0.5,
+    "timeout_seconds": null,
+    "timestamp": "2026-06-29T20:27:02.932591Z",
+    "top_p": 0.9
+  },
+  "parse_diagnostics": {
+    "batch_error": "",
+    "invalid_format_rows": 0,
+    "invalid_lines": [],
+    "invalid_reason_counts": {
+      "parse_error": 0,
+      "wrong_column_count": 0
+    },
+    "ollama_call_metadata": {
+      "elapsed_seconds": 17.718796014785767,
+      "endpoint": "http://localhost:11434",
+      "error": "",
+      "http_status": 200,
+      "model": "llama3.2:3b",
+      "num_predict": 2200,
+      "ok": true,
+      "response_bytes": 7438,
+      "temperature": 0.5,
+      "timeout_seconds": null,
+      "timestamp": "2026-06-29T20:27:02.932591Z",
+      "top_p": 0.9
+    },
+    "parse_error_count": 0,
+    "parsed_rows": 23,
+    "raw_rows": 23,
+    "valid_rows": 15
+  },
+  "parsed_rows": 23,
+  "prompt": "Generate 25 synthetic CSV rows for the adult dataset.\nReturn only CSV text with one header line. No markdown. No explanation.\nColumns in this exact order: age,workclass,education,education-num,marital-status,occupation,race,sex,hours-per-week,income\nApproximate target distribution: <=50K: 0.750; >50K: 0.250\nDo not copy example rows exactly. Vary numeric values and category combinations.\nExamples:\nage,workclass,education,education-num,marital-status,occupation,race,sex,hours-per-week,income\n37,Self-emp-not-inc,HS-grad,9,Married-civ-spouse,Farming-fishing,White,Male,60,>50K\n36,Private,Bachelors,13,Never-married,Exec-managerial,White,Male,60,<=50K\n19,Private,Some-college,10,Never-married,Adm-clerical,White,Female,18,<=50K\n36,Private,Bachelors,13,Married-civ-spouse,Exec-managerial,White,Male,40,<=50K\n64,State-gov,Bachelors,13,Married-civ-spouse,Craft-repair,White,Male,45,>50K\n62,Private,Masters,14,Married-civ-spouse,Exec-managerial,White,Male,40,>50K\n31,Federal-gov,Masters,14,Married-civ-spouse,Exec-managerial,White,Male,60,>50K\n38,Private,Bachelors,13,Divorced,Prof-specialty,White,Female,35,<=50K",
+  "raw_response": "age,workclass,education,education-num,marital-status,occupation,race,sex,hours-per-week,income\n46,Self-emp-not-inc,Some-college,10,Never-married,Craft-repair,White,Male,55,>50K\n21,Federal-gov,HS-grad,12,Never-married,Adm-clerical,White,Female,20,<=50K\n53,Private,Bachelors,11,Married-civ-spouse,Sales-manage,White,Male,35,>50K\n39,State-gov,Some-college,8,Divorced,Farming-fishing,White,Male,45,>50K\n60,Private,HS-grad,9,Never-married,Exec-managerial,White,Female,40,<=50K\n27,Self-emp-not-inc,Bachelors,12,Married-civ-spouse,Prof-specialty,White,Male,30,<=50K\n61,Civil-gov,Some-college,10,Married-civ-spouse,Craft-repair,White,Female,20,>50K\n32,Private,Masters,14,Never-married,Adm-clerical,White,Male,45,>50K\n48,State-gov,Bachelors,11,Married-civ-spouse,Sales-manage,White,Male,55,>50K\n19,Federal-gov,HS-grad,12,Divorced,Exec-managerial,White,Female,25,<=50K\n42,Private,Bachelors,13,Never-married,Craft-repair,White,Male,60,>50K\n57,Self-emp-not-inc,Some-college,10,Never-married,Farming-fishing,White,Female,35,>50K\n39,State-gov,HS-grad,9,Married-civ-spouse,Sales-manage,White,Male,40,>50K\n25,Civil-gov,Bachelors,12,Married-civ-spouse,Prof-specialty,White,Female,30,<=50K\n62,Private,Some-college,10,Never-married,Adm-clerical,White,Male,45,>50K\n35,Self-emp-not-inc,HS-grad,9,Never-married,Craft-repair,White,Male,20,>50K\n44,State-gov,Bachelors,11,Married-civ-spouse,Sales-manage,White,Female,55,>50K\n51,Federal-gov,Some-college,8,Divorced,Exec-managerial,White,Male,35,>50K\n20,Private,HS-grad,9,Never-married,Craft-repair,White,Male,40,<=50K\n38,Self-emp-not-inc,Bachelors,12,Married-civ-spouse,Prof-specialty,White,Female,30,>50K\n29,State-gov,Some-college,10,Divorced,Farming-fishing,White,Male,45,>50K\n41,Private,HS-grad,9,Never-married,Sales-manage,White,Male,55,>50K\n58,Civil-gov,Bachelors,11,Married-civ-spouse,Prof-specialty,White,Female,30,>50K",
+  "raw_rows": 23,
+  "request_elapsed_seconds": 17.718796014785767,
+  "seed": 42,
+  "temperature": 0.5,
+  "timestamp": "2026-06-29T20:27:02.942164Z",
+  "top_p": 0.9,
+  "train_size": 100,
+  "valid_rows": 15
+}

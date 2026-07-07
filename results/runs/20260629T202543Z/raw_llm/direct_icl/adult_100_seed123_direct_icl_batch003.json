@@ -1,0 +1,65 @@
+{
+  "batch_index": 3,
+  "dataset": "adult",
+  "http_status": 200,
+  "invalid_lines_limited": [],
+  "invalid_reason_counts": {
+    "parse_error": 0,
+    "wrong_column_count": 0
+  },
+  "method": "direct_icl",
+  "model": "llama3.2:3b",
+  "num_predict": 2200,
+  "ollama_call_metadata": {
+    "elapsed_seconds": 24.674699783325195,
+    "endpoint": "http://localhost:11434",
+    "error": "",
+    "http_status": 200,
+    "model": "llama3.2:3b",
+    "num_predict": 2200,
+    "ok": true,
+    "response_bytes": 7289,
+    "temperature": 0.5,
+    "timeout_seconds": null,
+    "timestamp": "2026-06-29T20:36:15.408038Z",
+    "top_p": 0.9
+  },
+  "parse_diagnostics": {
+    "batch_error": "",
+    "invalid_format_rows": 0,
+    "invalid_lines": [],
+    "invalid_reason_counts": {
+      "parse_error": 0,
+      "wrong_column_count": 0
+    },
+    "ollama_call_metadata": {
+      "elapsed_seconds": 24.674699783325195,
+      "endpoint": "http://localhost:11434",
+      "error": "",
+      "http_status": 200,
+      "model": "llama3.2:3b",
+      "num_predict": 2200,
+      "ok": true,
+      "response_bytes": 7289,
+      "temperature": 0.5,
+      "timeout_seconds": null,
+      "timestamp": "2026-06-29T20:36:15.408038Z",
+      "top_p": 0.9
+    },
+    "parse_error_count": 0,
+    "parsed_rows": 22,
+    "raw_rows": 22,
+    "valid_rows": 16
+  },
+  "parsed_rows": 22,
+  "prompt": "Generate 25 synthetic CSV rows for the adult dataset.\nReturn only CSV text with one header line. No markdown. No explanation.\nColumns in this exact order: age,workclass,education,education-num,marital-status,occupation,race,sex,hours-per-week,income\nApproximate target distribution: <=50K: 0.750; >50K: 0.250\nDo not copy example rows exactly. Vary numeric values and category combinations.\nExamples:\nage,workclass,education,education-num,marital-status,occupation,race,sex,hours-per-week,income\n38,Private,Bachelors,13,Married-civ-spouse,Exec-managerial,White,Male,40,>50K\n34,Self-emp-not-inc,HS-grad,9,Divorced,Exec-managerial,White,Female,35,>50K\n42,Local-gov,HS-grad,9,Married-civ-spouse,Craft-repair,White,Male,40,>50K\n27,Private,Bachelors,13,Never-married,Sales,Other,Male,38,<=50K\n20,Private,Some-college,10,Never-married,Other-service,White,Male,45,<=50K\n30,Private,11th,7,Married-civ-spouse,Craft-repair,White,Male,45,<=50K\n35,Private,Some-college,10,Divorced,Machine-op-inspct,White,Female,40,<=50K\n60,State-gov,Masters,14,Married-civ-spouse,Prof-specialty,Asian-Pac-Islander,Male,38,>50K",
+  "raw_response": "age,workclass,education,education-num,marital-status,occupation,race,sex,hours-per-week,income\n45,Self-emp-not-inc,Bachelors,15,Never-married,Sales-admin,White,Female,30,<=50K\n28,Private,Some-college,11,Married-civ-spouse,Craft-repair,White,Male,42,>50K\n38,Local-gov,HS-grad,10,Divorced,Machine-op-inspct,Black,Male,35,>50K\n25,Self-emp-not-inc,Some-college,12,Never-married,Sales,Asian-Pac-Islander,Female,40,<=50K\n42,Private,Bachelors,13,Married-civ-spouse,Exec-managerial,White,Male,39,>50K\n32,State-gov,11th,8,Never-married,Other-service,Black,Male,48,>50K\n27,Local-gov,HS-grad,9,Never-married,Craft-repair,Asian-Pac-Islander,Female,40,<=50K\n39,Private,Bachelors,14,Never-married,Sales-admin,White,Male,32,>50K\n35,Self-emp-not-inc,Some-college,11,Married-civ-spouse,Other-service,Black,Male,41,>50K\n40,State-gov,Masters,16,Divorced,Craft-repair,Asian-Pac-Islander,Female,30,>50K\n29,Local-gov,HS-grad,8,Never-married,Sales-admin,White,Male,38,>50K\n44,Private,Bachelors,12,Married-civ-spouse,Exec-managerial,White,Male,36,>50K\n26,Self-emp-not-inc,Some-college,13,Never-married,Sales,Asian-Pac-Islander,Female,43,>50K\n31,State-gov,11th,9,Never-married,Craft-repair,Black,Male,45,>50K\n23,Local-gov,Bachelors,10,Married-civ-spouse,Other-service,White,Male,39,<=50K\n36,Private,Some-college,12,Divorced,Sales-admin,Asian-Pac-Islander,Female,30,>50K\n45,Self-emp-not-inc,Bachelors,15,Never-married,Sales,White,Male,32,>50K\n28,State-gov,HS-grad,9,Married-civ-spouse,Craft-repair,Asian-Pac-Islander,Female,40,>50K\n39,Local-gov,Bachelors,11,Never-married,Sales-admin,White,Male,35,>50K\n42,Self-emp-not-inc,Some-college,10,Married-civ-spouse,Other-service,Asian-Pac-Islander,Female,41,>50K\n48,Private,Bachelors,14,Never-married,Sales-admin,White,Male,38,>50K\n40,State-gov,11th,8,Divorced,Craft-repair,Black,Male,42,>50K",
+  "raw_rows": 22,
+  "request_elapsed_seconds": 24.674699783325195,
+  "seed": 123,
+  "temperature": 0.5,
+  "timestamp": "2026-06-29T20:36:15.422585Z",
+  "top_p": 0.9,
+  "train_size": 100,
+  "valid_rows": 16
+}

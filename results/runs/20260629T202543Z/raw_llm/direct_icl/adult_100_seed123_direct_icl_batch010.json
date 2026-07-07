@@ -1,0 +1,65 @@
+{
+  "batch_index": 10,
+  "dataset": "adult",
+  "http_status": 200,
+  "invalid_lines_limited": [],
+  "invalid_reason_counts": {
+    "parse_error": 0,
+    "wrong_column_count": 0
+  },
+  "method": "direct_icl",
+  "model": "llama3.2:3b",
+  "num_predict": 2200,
+  "ollama_call_metadata": {
+    "elapsed_seconds": 27.623056173324585,
+    "endpoint": "http://localhost:11434",
+    "error": "",
+    "http_status": 200,
+    "model": "llama3.2:3b",
+    "num_predict": 2200,
+    "ok": true,
+    "response_bytes": 7813,
+    "temperature": 0.5,
+    "timeout_seconds": null,
+    "timestamp": "2026-06-29T20:39:12.194381Z",
+    "top_p": 0.9
+  },
+  "parse_diagnostics": {
+    "batch_error": "",
+    "invalid_format_rows": 0,
+    "invalid_lines": [],
+    "invalid_reason_counts": {
+      "parse_error": 0,
+      "wrong_column_count": 0
+    },
+    "ollama_call_metadata": {
+      "elapsed_seconds": 27.623056173324585,
+      "endpoint": "http://localhost:11434",
+      "error": "",
+      "http_status": 200,
+      "model": "llama3.2:3b",
+      "num_predict": 2200,
+      "ok": true,
+      "response_bytes": 7813,
+      "temperature": 0.5,
+      "timeout_seconds": null,
+      "timestamp": "2026-06-29T20:39:12.194381Z",
+      "top_p": 0.9
+    },
+    "parse_error_count": 0,
+    "parsed_rows": 24,
+    "raw_rows": 24,
+    "valid_rows": 3
+  },
+  "parsed_rows": 24,
+  "prompt": "Generate 25 synthetic CSV rows for the adult dataset.\nReturn only CSV text with one header line. No markdown. No explanation.\nColumns in this exact order: age,workclass,education,education-num,marital-status,occupation,race,sex,hours-per-week,income\nApproximate target distribution: <=50K: 0.750; >50K: 0.250\nDo not copy example rows exactly. Vary numeric values and category combinations.\nExamples:\nage,workclass,education,education-num,marital-status,occupation,race,sex,hours-per-week,income\n29,Private,Bachelors,13,Married-civ-spouse,Sales,White,Male,45,>50K\n37,Private,HS-grad,9,Divorced,Craft-repair,White,Female,48,<=50K\n46,Private,Bachelors,13,Married-civ-spouse,Sales,White,Male,40,>50K\n19,Private,HS-grad,9,Never-married,Handlers-cleaners,White,Male,40,<=50K\n81,Private,HS-grad,9,Married-civ-spouse,Exec-managerial,White,Male,26,>50K\n90,Private,Prof-school,15,Married-civ-spouse,Prof-specialty,White,Male,72,>50K\n38,Private,HS-grad,9,Divorced,Craft-repair,White,Male,50,<=50K\n28,Private,Bachelors,13,Never-married,Sales,White,Male,2,<=50K",
+  "raw_response": "age,workclass,education,education-num,marital-status,occupation,race,sex,hours-per-week,income\n25,Self-employed,HS-grad,10,Divorced,Cooking-food-prep,Black,Female,30,>50K\n42,Private,Bachelors,11,Married-civ-spouse,Sales-administrative,White,Male,38,>50K\n65,Private,Prof-school,14,Never-married,Farmers-and-fishermen,Asian-Filipino,Male,56,<=50K\n31,Self-employed,HS-grad,8,Married-civ-spouse,Craft-repair,White,Female,22,>50K\n88,Private,HS-grad,9,Never-married,Operating-clerical,Black,Male,48,<=50K\n49,Private,Bachelors,12,Divorced,Sales,White,Male,54,>50K\n20,Self-employed,HS-grad,10,Married-civ-spouse,Farmers-and-fishermen,Asian-Filipino,Male,24,<=50K\n72,Private,Prof-school,15,Never-married,Craft-repair,White,Male,62,>50K\n35,Self-employed,Bachelors,13,Married-civ-spouse,Sales-administrative,Black,Female,28,>50K\n98,Private,HS-grad,9,Never-married,Prof-specialty,Asian-Filipino,Male,40,<=50K\n27,Self-employed,HS-grad,8,Divorced,Cooking-food-prep,White,Male,32,>50K\n81,Private,Bachelors,11,Married-civ-spouse,Sales-administrative,Asian-Filipino,Female,42,>50K\n43,Self-employed,Bachelors,12,Married-civ-spouse,Craft-repair,White,Male,30,>50K\n19,Private,HS-grad,10,Never-married,Farmers-and-fishermen,Asian-Filipino,Male,20,<=50K\n62,Self-employed,Prof-school,14,Married-civ-spouse,Sales-administrative,White,Male,56,>50K\n40,Private,HS-grad,9,Never-married,Cooking-food-prep,Asian-Filipino,Female,26,<=50K\n51,Self-employed,Bachelors,13,Married-civ-spouse,Sales-administrative,Black,Male,38,>50K\n86,Private,HS-grad,8,Never-married,Prof-specialty,White,Male,48,>50K\n36,Self-employed,Bachelors,11,Divorced,Craft-repair,Asian-Filipino,Female,32,<=50K\n28,Self-employed,HS-grad,10,Married-civ-spouse,Sales-administrative,Black,Male,24,>50K\n58,Private,Prof-school,15,Never-married,Farmers-and-fishermen,White,Male,70,>50K\n45,Self-employed,Bachelors,12,Never-married,Craft-repair,Asian-Filipino,Male,30,<=50K\n75,Private,HS-grad,9,Married-civ-spouse,Sales-administrative,Black,Female,40,>50K\n25,Self-employed,Prof-school,14,Divorced,Cooking-food-prep,White,Male,28,<=50K",
+  "raw_rows": 24,
+  "request_elapsed_seconds": 27.623056173324585,
+  "seed": 123,
+  "temperature": 0.5,
+  "timestamp": "2026-06-29T20:39:12.210340Z",
+  "top_p": 0.9,
+  "train_size": 100,
+  "valid_rows": 3
+}

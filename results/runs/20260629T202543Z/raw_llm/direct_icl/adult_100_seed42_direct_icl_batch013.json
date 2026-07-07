@@ -1,0 +1,65 @@
+{
+  "batch_index": 13,
+  "dataset": "adult",
+  "http_status": 200,
+  "invalid_lines_limited": [],
+  "invalid_reason_counts": {
+    "parse_error": 0,
+    "wrong_column_count": 0
+  },
+  "method": "direct_icl",
+  "model": "llama3.2:3b",
+  "num_predict": 2200,
+  "ollama_call_metadata": {
+    "elapsed_seconds": 19.701758861541748,
+    "endpoint": "http://localhost:11434",
+    "error": "",
+    "http_status": 200,
+    "model": "llama3.2:3b",
+    "num_predict": 2200,
+    "ok": true,
+    "response_bytes": 6705,
+    "temperature": 0.5,
+    "timeout_seconds": null,
+    "timestamp": "2026-06-29T20:30:31.656789Z",
+    "top_p": 0.9
+  },
+  "parse_diagnostics": {
+    "batch_error": "",
+    "invalid_format_rows": 0,
+    "invalid_lines": [],
+    "invalid_reason_counts": {
+      "parse_error": 0,
+      "wrong_column_count": 0
+    },
+    "ollama_call_metadata": {
+      "elapsed_seconds": 19.701758861541748,
+      "endpoint": "http://localhost:11434",
+      "error": "",
+      "http_status": 200,
+      "model": "llama3.2:3b",
+      "num_predict": 2200,
+      "ok": true,
+      "response_bytes": 6705,
+      "temperature": 0.5,
+      "timeout_seconds": null,
+      "timestamp": "2026-06-29T20:30:31.656789Z",
+      "top_p": 0.9
+    },
+    "parse_error_count": 0,
+    "parsed_rows": 20,
+    "raw_rows": 20,
+    "valid_rows": 15
+  },
+  "parsed_rows": 20,
+  "prompt": "Generate 25 synthetic CSV rows for the adult dataset.\nReturn only CSV text with one header line. No markdown. No explanation.\nColumns in this exact order: age,workclass,education,education-num,marital-status,occupation,race,sex,hours-per-week,income\nApproximate target distribution: <=50K: 0.750; >50K: 0.250\nDo not copy example rows exactly. Vary numeric values and category combinations.\nExamples:\nage,workclass,education,education-num,marital-status,occupation,race,sex,hours-per-week,income\n40,Private,Bachelors,13,Married-spouse-absent,Exec-managerial,White,Male,40,>50K\n49,State-gov,Some-college,10,Married-civ-spouse,Machine-op-inspct,White,Male,40,>50K\n37,Private,Bachelors,13,Married-civ-spouse,Sales,White,Male,60,>50K\n52,Private,5th-6th,3,Married-spouse-absent,Craft-repair,White,Male,40,<=50K\n19,Private,Some-college,10,Never-married,Adm-clerical,White,Female,18,<=50K\n40,Federal-gov,Some-college,10,Never-married,Adm-clerical,White,Female,40,<=50K\n37,Private,HS-grad,9,Never-married,Handlers-cleaners,White,Female,40,<=50K\n53,Private,HS-grad,9,Married-civ-spouse,Handlers-cleaners,White,Male,40,>50K",
+  "raw_response": "age,workclass,education,education-num,marital-status,occupation,race,sex,hours-per-week,income\n42,Self-emp-not-inc,Bachelors,11,Never-married,Craft-repair,White,Male,35,<=50K\n48,Federal-gov,Some-college,12,Married-spouse-absent,Exec-managerial,Black,Male,45,>50K\n19,Private,5th-6th,4,Married-civ-spouse,Sales,Asian,Female,20,<=50K\n41,State-gov,HS-grad,8,Never-married,Adm-clerical,White,Female,38,<=50K\n43,Self-emp-not-inc,Bachelors,12,Never-married,Craft-repair,White,Male,30,>50K\n37,Private,Some-college,9,Married-civ-spouse,Sales,White,Male,55,>50K\n51,Federal-gov,HS-grad,8,Married-spouse-absent,Exec-managerial,Black,Male,42,>50K\n49,Private,Bachelors,14,Never-married,Adm-clerical,Asian,Male,32,<=50K\n40,State-gov,Some-college,11,Married-civ-spouse,Sales,White,Female,45,>50K\n38,Self-emp-not-inc,Bachelors,13,Divorced,Craft-repair,White,Male,25,>50K\n42,Private,HS-grad,7,Never-married,Craft-repair,Asian,Female,28,<=50K\n53,Federal-gov,5th-6th,2,Married-spouse-absent,Exec-managerial,Black,Male,40,>50K\n19,State-gov,Some-college,10,Never-married,Sales,White,Female,20,<=50K\n42,Private,Bachelors,12,Never-married,Craft-repair,White,Male,35,>50K\n41,Self-emp-not-inc,HS-grad,9,Married-civ-spouse,Adm-clerical,Black,Male,30,>50K\n38,Federal-gov,Bachelors,10,Never-married,Sales,Asian,Female,40,<=50K\n49,Private,5th-6th,3,Divorced,Craft-repair,White,Male,25,<=50K\n37,State-gov,Some-college,11,Married-civ-spouse,Adm-clerical,Asian,Female,40,>50K\n51,Federal-gov,Bachelors,9,Never-married,Sales,Black,Male,38,>50K\n19,Private,HS-grad,6,Married-civ-spouse,Craft-repair,White,Male,22,<=50K",
+  "raw_rows": 20,
+  "request_elapsed_seconds": 19.701758861541748,
+  "seed": 42,
+  "temperature": 0.5,
+  "timestamp": "2026-06-29T20:30:31.666713Z",
+  "top_p": 0.9,
+  "train_size": 100,
+  "valid_rows": 15
+}

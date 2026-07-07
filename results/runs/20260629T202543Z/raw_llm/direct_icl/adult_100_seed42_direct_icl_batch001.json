@@ -1,0 +1,65 @@
+{
+  "batch_index": 1,
+  "dataset": "adult",
+  "http_status": 200,
+  "invalid_lines_limited": [],
+  "invalid_reason_counts": {
+    "parse_error": 0,
+    "wrong_column_count": 0
+  },
+  "method": "direct_icl",
+  "model": "llama3.2:3b",
+  "num_predict": 2200,
+  "ollama_call_metadata": {
+    "elapsed_seconds": 14.15580701828003,
+    "endpoint": "http://localhost:11434",
+    "error": "",
+    "http_status": 200,
+    "model": "llama3.2:3b",
+    "num_predict": 2200,
+    "ok": true,
+    "response_bytes": 6307,
+    "temperature": 0.5,
+    "timeout_seconds": null,
+    "timestamp": "2026-06-29T20:26:27.368778Z",
+    "top_p": 0.9
+  },
+  "parse_diagnostics": {
+    "batch_error": "",
+    "invalid_format_rows": 0,
+    "invalid_lines": [],
+    "invalid_reason_counts": {
+      "parse_error": 0,
+      "wrong_column_count": 0
+    },
+    "ollama_call_metadata": {
+      "elapsed_seconds": 14.15580701828003,
+      "endpoint": "http://localhost:11434",
+      "error": "",
+      "http_status": 200,
+      "model": "llama3.2:3b",
+      "num_predict": 2200,
+      "ok": true,
+      "response_bytes": 6307,
+      "temperature": 0.5,
+      "timeout_seconds": null,
+      "timestamp": "2026-06-29T20:26:27.368778Z",
+      "top_p": 0.9
+    },
+    "parse_error_count": 0,
+    "parsed_rows": 21,
+    "raw_rows": 21,
+    "valid_rows": 13
+  },
+  "parsed_rows": 21,
+  "prompt": "Generate 25 synthetic CSV rows for the adult dataset.\nReturn only CSV text with one header line. No markdown. No explanation.\nColumns in this exact order: age,workclass,education,education-num,marital-status,occupation,race,sex,hours-per-week,income\nApproximate target distribution: <=50K: 0.750; >50K: 0.250\nDo not copy example rows exactly. Vary numeric values and category combinations.\nExamples:\nage,workclass,education,education-num,marital-status,occupation,race,sex,hours-per-week,income\n18,Private,10th,6,Never-married,Other-service,White,Male,40,<=50K\n31,Federal-gov,Masters,14,Married-civ-spouse,Exec-managerial,White,Male,60,>50K\n62,Private,Masters,14,Married-civ-spouse,Exec-managerial,White,Male,40,>50K\n24,Private,HS-grad,9,Separated,Other-service,White,Female,50,>50K\n38,Private,HS-grad,9,Married-civ-spouse,Other-service,White,Male,45,<=50K\n56,Private,HS-grad,9,Married-civ-spouse,Sales,White,Female,50,<=50K\n49,Private,HS-grad,9,Divorced,Machine-op-inspct,White,Male,40,<=50K\n40,Private,Bachelors,13,Married-spouse-absent,Exec-managerial,White,Male,40,>50K",
+  "raw_response": "age,workclass,education,education-num,marital-status,occupation,race,sex,hours-per-week,income\n35,Federal-gov,HS-grad,8,Never-married,Sales,White,Male,55,<=50K\n41,Bank,HS-grad,7,Divorced,Clerical,White,Male,45,>50K\n20,Private,10th,5,Married-civ-spouse,Other-service,White,Female,35,<=50K\n58,Private,HS-grad,8,Married-civ-spouse,Sales,White,Female,55,<=50K\n27,Private,Bachelors,12,Single,Exec-managerial,White,Male,60,>50K\n46,Private,HS-grad,9,Married-civ-spouse,Other-service,White,Male,40,<=50K\n32,Federal-gov,HS-grad,7,Never-married,Clerical,White,Female,35,<=50K\n54,Private,HS-grad,8,Divorced,Sales,White,Male,45,>50K\n22,Private,10th,6,Married-civ-spouse,Other-service,White,Male,55,>50K\n38,Private,Bachelors,13,Separated,Clerical,White,Female,40,<=50K\n42,Private,HS-grad,8,Divorced,Sales,White,Female,35,<=50K\n17,Private,10th,5,Never-married,Other-service,White,Male,25,<=50K\n48,Private,HS-grad,9,Married-civ-spouse,Clerical,White,Male,40,>50K\n28,Private,HS-grad,8,Single,Exec-managerial,White,Female,60,>50K\n61,Private,Bachelors,12,Never-married,Sales,White,Male,45,<=50K\n39,Private,HS-grad,9,Divorced,Clerical,White,Female,40,<=50K\n25,Private,10th,6,Married-civ-spouse,Other-service,White,Male,35,<=50K\n51,Private,Bachelors,13,Never-married,Exec-managerial,White,Female,55,>50K\n29,Private,HS-grad,8,Divorced,Sales,White,Male,45,>50K\n43,Private,HS-grad,7,Married-civ-spouse,Clerical,White,Female,40,<=50K\n33,Private,Bachelors,12,Never-married,Other-service,White,Male,60,>50K",
+  "raw_rows": 21,
+  "request_elapsed_seconds": 14.15580701828003,
+  "seed": 42,
+  "temperature": 0.5,
+  "timestamp": "2026-06-29T20:26:27.378139Z",
+  "top_p": 0.9,
+  "train_size": 100,
+  "valid_rows": 13
+}

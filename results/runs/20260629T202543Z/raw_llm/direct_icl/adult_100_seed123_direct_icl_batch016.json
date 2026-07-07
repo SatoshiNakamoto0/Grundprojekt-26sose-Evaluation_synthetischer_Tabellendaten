@@ -1,0 +1,65 @@
+{
+  "batch_index": 16,
+  "dataset": "adult",
+  "http_status": 200,
+  "invalid_lines_limited": [],
+  "invalid_reason_counts": {
+    "parse_error": 0,
+    "wrong_column_count": 0
+  },
+  "method": "direct_icl",
+  "model": "llama3.2:3b",
+  "num_predict": 2200,
+  "ollama_call_metadata": {
+    "elapsed_seconds": 24.888901948928833,
+    "endpoint": "http://localhost:11434",
+    "error": "",
+    "http_status": 200,
+    "model": "llama3.2:3b",
+    "num_predict": 2200,
+    "ok": true,
+    "response_bytes": 7337,
+    "temperature": 0.5,
+    "timeout_seconds": null,
+    "timestamp": "2026-06-29T20:41:48.361689Z",
+    "top_p": 0.9
+  },
+  "parse_diagnostics": {
+    "batch_error": "",
+    "invalid_format_rows": 0,
+    "invalid_lines": [],
+    "invalid_reason_counts": {
+      "parse_error": 0,
+      "wrong_column_count": 0
+    },
+    "ollama_call_metadata": {
+      "elapsed_seconds": 24.888901948928833,
+      "endpoint": "http://localhost:11434",
+      "error": "",
+      "http_status": 200,
+      "model": "llama3.2:3b",
+      "num_predict": 2200,
+      "ok": true,
+      "response_bytes": 7337,
+      "temperature": 0.5,
+      "timeout_seconds": null,
+      "timestamp": "2026-06-29T20:41:48.361689Z",
+      "top_p": 0.9
+    },
+    "parse_error_count": 0,
+    "parsed_rows": 22,
+    "raw_rows": 22,
+    "valid_rows": 3
+  },
+  "parsed_rows": 22,
+  "prompt": "Generate 25 synthetic CSV rows for the adult dataset.\nReturn only CSV text with one header line. No markdown. No explanation.\nColumns in this exact order: age,workclass,education,education-num,marital-status,occupation,race,sex,hours-per-week,income\nApproximate target distribution: <=50K: 0.750; >50K: 0.250\nDo not copy example rows exactly. Vary numeric values and category combinations.\nExamples:\nage,workclass,education,education-num,marital-status,occupation,race,sex,hours-per-week,income\n38,Private,Bachelors,13,Married-civ-spouse,Exec-managerial,White,Male,40,>50K\n22,Private,Some-college,10,Never-married,Transport-moving,White,Female,30,<=50K\n21,Self-emp-not-inc,Some-college,10,Never-married,Tech-support,White,Male,25,<=50K\n53,State-gov,Some-college,10,Married-civ-spouse,Protective-serv,White,Male,60,<=50K\n52,Private,HS-grad,9,Married-civ-spouse,Machine-op-inspct,Black,Male,40,>50K\n30,Private,HS-grad,9,Married-civ-spouse,Transport-moving,White,Male,70,>50K\n27,Private,Bachelors,13,Never-married,Exec-managerial,White,Female,55,<=50K\n64,Self-emp-inc,Doctorate,16,Married-civ-spouse,Exec-managerial,White,Male,60,>50K",
+  "raw_response": "age,workclass,education,education-num,marital-status,occupation,race,sex,hours-per-week,income\n35,Private,Bachelors,12,Divorced,Sales-managers,Black,Female,45,<=50K\n41,Self-emp-not-inc,Vocational-associate,8,Never-married,Crafts-reserv,White,Male,20,>50K\n28,State-gov,Some-college,11,Married-civ-spouse,Purpose-of-service,Asian,Female,35,<=50K\n51,Private,Bachelors,14,Never-married,Transport-driving,Black,Male,65,>50K\n26,Self-emp-inc,HS-grad,10,Never-married,Machine-op-inspct,White,Male,30,>50K\n41,Private,Some-college,9,Married-civ-spouse,Sales-clerical,Asian,Female,40,<=50K\n57,Self-emp-not-inc,HS-grad,12,Never-married,Transport-maintenance,Black,Male,60,>50K\n32,State-gov,Doctorate,15,Married-civ-spouse,Exec-managerial,White,Male,75,>50K\n48,Private,Vocational-associate,7,Divorced,Crafts-reserv,Asian,Female,55,<=50K\n29,Self-emp-inc,Bachelors,13,Never-married,Transport-maintenance,Black,Male,25,>50K\n39,State-gov,Some-college,10,Married-civ-spouse,Purpose-of-service,White,Male,45,>50K\n36,Private,HS-grad,9,Never-married,Sales-managers,Asian,Female,35,<=50K\n51,Self-emp-not-inc,Doctorate,16,Never-married,Crafts-reserv,Black,Male,65,>50K\n34,State-gov,Bachelors,12,Married-civ-spouse,Transport-driving,White,Male,70,>50K\n25,Private,Vocational-associate,8,Never-married,Sales-clerical,Asian,Female,40,<=50K\n46,Self-emp-inc,Some-college,11,Divorced,Purpose-of-service,White,Male,60,>50K\n38,State-gov,Bachelors,14,Never-married,Transport-maintenance,Black,Male,55,>50K\n42,Private,HS-grad,9,Married-civ-spouse,Sales-managers,Asian,Female,30,<=50K\n29,Self-emp-not-inc,Doctorate,15,Never-married,Crafts-reserv,White,Male,20,>50K\n47,State-gov,Vocational-associate,7,Never-married,Purpose-of-service,Black,Male,65,>50K\n35,Private,Bachelors,13,Divorced,Sales-clerical,Asian,Female,45,<=50K\n30,Self-emp-inc,Some-college,10,Married-civ-spouse,Machine-op-inspct,White,Male,70,>50K",
+  "raw_rows": 22,
+  "request_elapsed_seconds": 24.888901948928833,
+  "seed": 123,
+  "temperature": 0.5,
+  "timestamp": "2026-06-29T20:41:48.371819Z",
+  "top_p": 0.9,
+  "train_size": 100,
+  "valid_rows": 3
+}
