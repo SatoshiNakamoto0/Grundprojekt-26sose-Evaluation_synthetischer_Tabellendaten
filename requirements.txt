@@ -1,0 +1,28 @@
+# Python: 3.11
+# Experiment grid: 60 planned result rows
+# Main comparison: ctgan, direct_icl, code_llm
+# Diagnostic/robustness methods: ctgan_strong, fallback_only
+#
+# Complete resolved environment after the final run:
+# results/runs/<RUN_ID>/pip_freeze.txt
+#
+# This file is checked by the notebook. It should not be generated or
+# overwritten by the notebook during the final run.
+
+numpy==2.4.6
+pandas==2.3.3
+scipy==1.17.1
+scikit-learn==1.9.0
+matplotlib==3.10.9
+requests==2.34.2
+
+sdv==1.37.0
+ctgan==0.12.1
+rdt==1.21.0
+sdmetrics==0.28.0
+torch==2.12.0
+copulas==0.14.1
+Faker==40.20.0
+
+jupyterlab==4.5.7
+ipykernel==7.2.0
