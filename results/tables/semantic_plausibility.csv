@@ -1,0 +1,7 @@
+dataset,rule,real_percent,ctgan_percent,direct_icl_percent,code_llm_percent,fallback_only_percent,aggregation,reference_population,source_run_id
+Adult,age < 22 und verheiratet,0.44,11.30,3.77,6.43,6.57,pooled_over_train_sizes_and_seeds,archived real training splits,<RUN_ID>
+Adult,age < 25 und income >50K,0.22,6.43,3.57,4.73,5.13,pooled_over_train_sizes_and_seeds,archived real training splits,<RUN_ID>
+Adult,ungesehene workclass/occupation-Paare,0.00,0.37,0.93,0.90,2.60,pooled_over_train_sizes_and_seeds,processed Adult full dataset observed workclass/occupation pairs,<RUN_ID>
+Pima,Pregnancies > 8 und Age < 30,0.22,5.50,4.20,8.60,8.40,pooled_over_train_sizes_and_seeds,archived real training splits,<RUN_ID>
+Pima,BloodPressure zwischen 1 und 39,0.17,5.83,0.10,10.00,6.93,pooled_over_train_sizes_and_seeds,archived real training splits,<RUN_ID>
+Pima,positiver BMI < 18.5,0.56,6.10,0.03,0.77,2.10,pooled_over_train_sizes_and_seeds,archived real training splits,<RUN_ID>
